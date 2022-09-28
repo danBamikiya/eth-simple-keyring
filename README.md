@@ -15,7 +15,7 @@ This is the only class property or method, the remaining methods are instance me
 
 As a Javascript class, your Keyring object will be used to instantiate new Keyring instances using the new keyword. For example:
 
-```
+```js
 const keyring = new YourKeyringClass(options);
 ```
 
@@ -51,8 +51,8 @@ This method will receive a hex-prefixed, all-lowercase address string for the ac
 
 For your convenience, the transaction is an instance of ethereumjs-tx, (https://github.com/ethereumjs/ethereumjs-tx) so signing can be as simple as:
 
-```
-transaction.sign(privateKey)
+```js
+transaction.sign(privateKey);
 ```
 
 You must return a valid signed ethereumjs-tx (https://github.com/ethereumjs/ethereumjs-tx) object when complete, it can be the same transaction you received.
